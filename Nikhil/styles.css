@@ -1,0 +1,75 @@
+body{
+
+    font-family: 'Roboto';
+}
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+/* landingpage */
+#header{
+
+}
+
+/* navbar */
+.navbar{
+    padding-bottom: 1.25%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.navbar-brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+
+.img1{
+
+}
+.homepage{
+    text-align: center;
+    margin-top: 20%;
+    padding: 15%;
+}
+.welcome{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/* AboutUs */
+#about{
+    padding: 7%;
+}
+.diabetes{
+    text-align: center;
+    padding-top: 7%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+/* working */
+#working{
+    text-align: center;
+    padding: 6%;
+}
+
+
+/* contact-us */
+#contact{
+    text-align: center;
+    padding: 5%;
+}
+i{
+    font-size: 1.5rem;
+    margin: 2%;
+    color: black;
+}
