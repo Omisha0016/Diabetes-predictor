@@ -8,8 +8,15 @@
     <!-- Js and CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<<<<<<< HEAD:result.html
     <link rel="stylesheet" href="result.css">
     <link rel="stylesheet" href="footer.css">
+=======
+    <link rel="stylesheet" href="/static/result.css">
+    <link rel="stylesheet" href="/static/footer.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+>>>>>>> 1166e30bbbd730bce2da20bb739875a19682d7d4:templates/result.html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Result</title>
   </head>
@@ -68,7 +75,8 @@
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="/JS/prago.js"></script>
+    <script src="/static/JS/prago.js"></script>
+    <script src = "{{url_for('static', filename = 'JS/prago.js')}}" ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
