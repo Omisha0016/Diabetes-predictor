@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Volkhov&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./static/form.css">
+    <link rel="stylesheet" href="/static/form.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
     <title>DiaDictor</title>
 </head>
 
@@ -62,6 +63,14 @@
                     <br>
                     <input type="radio" id="low" name="fnc" value="low" checked>
                     <label for="low">0.4</label>
+                    <br>
+                    <span class="note">Note:
+                        <ul>
+                       <li> If someone closely related to you has diabetes (like your father/mother/brother/sister) select 2.2</li>
+                       <li>If someone in your kin has diabetes (like grandparents/uncle/aunt) selct 1.2</li>
+                       <li>Otherwise select 0.4</li>
+                    </ul>
+                    </span>
                 </fieldset>
                 <fieldset>
                     Number of Pregnancies:
