@@ -47,7 +47,7 @@ body {
 
 .header {
     height: 100vh;
-    background-image: url(/media/mainLogoBg.gif);
+    background-image: url(mainLogoBg.gif);
     /*background-image: 
     linear-gradient(to right bottom, 
    rgba(76, 216, 255, 0.322),
