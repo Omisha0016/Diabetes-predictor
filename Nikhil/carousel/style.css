@@ -1,0 +1,19 @@
+/* .bd-example{
+    background-color: rgba(139, 172, 214, 0.767);
+} */
+.carousel{
+    margin: 10%;
+}
+.carousel-item{
+    padding: 9% 5%;
+}
+.carousel-caption{
+    margin-bottom: 12%;
+}
+h5{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.carousel-indicators{
+    margin-bottom: 10%;
+}
