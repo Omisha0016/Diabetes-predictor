@@ -6,7 +6,7 @@
 }
 
 .align-items-center{
-    background-image: url(/media/doctor.jpg);
+    background-image: url('/static/media/doctor.jpg');
 }
 
 .mb-3{

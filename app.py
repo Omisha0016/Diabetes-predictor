@@ -14,6 +14,10 @@ model = pickle.load(open('model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
 #To use the predict button in our web-app
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -22,14 +26,16 @@ def predict():
     email = request.form['email']
     #int_features = [float(x) for x in request.form.values()]
     #print(int_features)
-    data1 = request.form['preg']
-    data2 = request.form['glucose']
-    data3 = request.form['BP']
-    data4 = request.form['ST']
-    data5 = request.form['insulin']
-    data6 = request.form['BMI']
-    data7 = request.form['DPF']
     data8 = request.form['age']
+    data7 = request.form['fnc']
+    data1 = request.form['pregnancies']
+    data2 = request.form['glucose']
+    data3 = request.form['bp']
+    data4 = request.form['thick']
+    data5 = request.form['insulin']
+    data6 = request.form['bmi']
+    
+    
     final_features = np.array([[data1, data2, data3, data4, data5, data6, data7, data8]])
     #final_features = [np.array(int_features)]
     prediction = model.predict_proba(final_features)
@@ -62,4 +68,4 @@ def predict():
 #                    )
 
 if __name__ == "__main__":
-    app.run(debug = True, port = 5000)
+    app.run(debug = True, port=8000)
