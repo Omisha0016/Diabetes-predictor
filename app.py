@@ -14,6 +14,10 @@ model = pickle.load(open('model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
+@app.route('/doctor')
+def doctor():
+    return render_template('doctor.html')
+
 @app.route('/form')
 def form():
     return render_template('form.html')
