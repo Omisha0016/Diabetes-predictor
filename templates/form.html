@@ -11,11 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/form.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
     <title>DiaDictor</title>
 </head>
 
 <body>
+
     <!--Navbar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
         <a href="index.html" class="navbar-brand">DIADICTOR</a>
@@ -35,12 +36,12 @@
     <br>
     <div class="boxform" data-aos="zoom-out">
         <div class="container">
-            <form id="contact" action="" method="post">
+            <form id="contact" action="/predict" method="POST">
 
                 <h4>Fill the details carefully</h4>
                 <fieldset>
                     Full Name:
-                    <input placeholder="Your name" type="text" tabindex="1" required autofocus name="name ">
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus name="name">
                 </fieldset>
                 <fieldset>
                     Email Id:
@@ -48,18 +49,18 @@
                 </fieldset>
                 <fieldset>
                     Age:
-                    <input placeholder=" Your Age" type="number" tabindex="4" required name="age" id="Age">
+                    <input placeholder="Your Age" type="text" tabindex="4" required name="age" id="Age">
                 </fieldset>
                 <fieldset class="dpf">
                     Diabetes Pedigree Function:
                     <br>
-                    <input type="radio" id="high" name="fnc" value="high">
+                    <input type="radio" id="high" name="fnc" value=2.2>
                     <label for="high">2.2</label>
                     <br>
-                    <input type="radio" id="medium" name="fnc" value="medium">
+                    <input type="radio" id="medium" name="fnc" value=1.2>
                     <label for="medium">1.2</label>
                     <br>
-                    <input type="radio" id="low" name="fnc" value="low" checked>
+                    <input type="radio" id="low" name="fnc" value=0.4 checked>
                     <label for="low">0.4</label>
                     <br>
                     <span class="note">Note:
@@ -72,34 +73,34 @@
                 </fieldset>
                 <fieldset>
                     Number of Pregnancies:
-                    <input type="number" tabindex="5" required name="pregnancies" id="pregnancies" value="0">
+                    <input type="text" tabindex="5" required name="pregnancies" id="pregnancies">
                     <span class="note">Note:If male then leave this field</span>
                 </fieldset>
                 <fieldset>
                     Glucose Level:
-                    <input type="number" step="any" tabindex="6" required name="glucose" id="glucose">
+                    <input type="text" step="any" tabindex="6" required name="glucose" id="glucose">
                 </fieldset>
                 <fieldset>
                     Blood Pressure:
-                    <input type="number" step="any" tabindex="7" required name="bp" id="bp">
+                    <input type="text" step="any" tabindex="7" required name="bp" id="bp">
                 </fieldset>
                 <fieldset>
                     Skin Thickness:
-                    <input type="number" step="any" tabindex="8" required name="thick" id="thick">
+                    <input type="text" step="any" tabindex="8" required name="thick" id="thick">
                 </fieldset>
                 <fieldset>
                     Insulin:
-                    <input type="number" step="any" tabindex="9" required name="insulin" id="insulin">
+                    <input type="text" step="any" tabindex="9" required name="insulin" id="insulin">
                 </fieldset>
                 <fieldset>
                     BMI(Body Mass Index):
-                    <input type="number" step="any" tabindex="10" required name="bmi" id="bmi">
+                    <input type="text" step="any" tabindex="10" required name="bmi" id="bmi">
                 </fieldset>
 
                 <fieldset data-aos="fade-in">
-                    <a href="result.html">
+                    <!--<a href="result.html">-->
                     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                    </a>
+                    <!--</a>-->
                 </fieldset>
 
             </form>

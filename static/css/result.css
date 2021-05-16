@@ -5,11 +5,16 @@
     margin-bottom: 150px;
 }
 
+<<<<<<< HEAD:static/css/result.css
+.align-items-center{
+    background-image: url('/static/media/doctor.jpg');
+=======
 /*Navbar*/
 .navbar{
     padding-bottom: 1px;
     padding-left: 3rem;
     padding-right: 3rem;
+>>>>>>> cabcd14ee5ba6d824bc15ec046232e414f6d95d7:static/result.css
 }
 .navbar-brand{
     font-size: 2rem;

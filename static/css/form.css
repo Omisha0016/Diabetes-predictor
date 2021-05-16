@@ -14,7 +14,7 @@
 	-webkit-font-smoothing:antialiased;
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 }
 /* navbar  */
@@ -65,7 +65,7 @@ body {
 .boxform{
     width: 100%;
     height: 100%;
-    background-image: url('/media/new-01.png');
+	background-image: url('/static/media/new-01.png');
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-size: contain;
@@ -115,7 +115,7 @@ fieldset {
     font-size: 15px;
     
     color: black;
-    font-family:font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
     
 }
 
