@@ -5,10 +5,14 @@
     margin-bottom: 150px;
 }
 
+<<<<<<< HEAD:static/css/result.css
 .align-items-center{
     background-image: url('media/result-pic.png');
 }
+=======
+>>>>>>> d6f7710280bd34ff54c6955d5b62c362a6f09a1f:static/css/doctor.css
 /*Navbar*/
+
 .navbar{
     padding-bottom: 1px;
     padding-left: 3rem;
@@ -44,7 +48,7 @@
 
 
 body{
-    background-image: url('result-pic.png');
+    background-image: url('/static/media/form-img-01.png');
     background-attachment: scroll;
     background-size: contain;
     background-repeat: no-repeat;
@@ -91,3 +95,12 @@ body{
     background-color:#54a9de9a;
     color:white;
 }
+/*
+@media screen and (max-width: 480px){
+    body{
+        position: absolute;
+        left: 0;
+        margin-left: 0px;
+    }
+}
+*/
