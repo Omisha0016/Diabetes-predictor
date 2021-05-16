@@ -53,7 +53,9 @@ body{
     text-align: right;
    
 }
-
+#output{
+    margin-left: 10px;
+}
 
 .mb-3{
     margin-top: 200px;

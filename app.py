@@ -45,31 +45,26 @@ def predict():
     prediction = model.predict_proba(final_features)
     print(prediction)
     output = '{0:.{1}f}'.format(10*prediction[0][1],2)
-    predictText = "Greetings from DiaDictor\nOn the basis of the information provided by you , Our predictor has calculated the risk of you getting diabetes. Rating on scale of 10 you have a rating of {}".format(output)
+    predictText = "Greetings from DiaDictor\nOn the basis of the information provided by you , our predictor has calculated the risk of you getting diabetes. Rating on scale of 10 you have a rating of {}".format(output)
     if output>str(7):
         content = "We suggest you to get an appointment with a doctor. Our appointment scheduler can help you get an appointment in your city."
     else:
         content = "We suggest you to maintain your health. If in case you want to consult a doctor our appointment scheduler can help you get an appointment in your city."
     
-    SUBJECT = 'Reprot for Diabetes Test by DiaDictor'
+    SUBJECT = 'Reg diabetes prediction by DiaDictor'
     TEXT = predictText + "\n" + content + "For further reference visit our webpage www.abc.com\nThanks\nRegards\nDiadictor team"
     message = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT)
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
     server.login("Diadictor@gmail.com", "Alpha@123")
     server.sendmail("Diadictor@gmail.com", email, message)
-   
-    if output>str(5):
-        return render_template('result.html', output = predictText)
+    
+    if output>str(7):
+        result_web = "Thank you " + name + " for using our Diabetes predictor.\nOn the basis of the information provided by you\nwe predict that the chances of you having diabetes is {}. We suggest you to consult a doctor".format(output)
     else:
-        return render_template('result.html', output = predictText)
+        result_web = "Thank you " + name + " for using our Diabetes predictor.\nOn the basis of the information provided by you\nwe predict that the chances of you having diabetes is {}".format(output)
     
-    
-#    mail.send_message('New Message, Test', 
-#                      sender='thesocialtrail85@gmail.com', 
-#                      recipients = 'guptabakul21@gmail.com' ,
-#                      body = predict_text + "\n" + "Hope you are in pink of your health"
-#                    )
+    return render_template('result.html', output = result_web)
 
 if __name__ == "__main__":
     app.run(debug = True, port=8000)

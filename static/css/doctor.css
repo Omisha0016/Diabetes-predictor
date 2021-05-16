@@ -5,12 +5,7 @@
     margin-bottom: 150px;
 }
 
-<<<<<<< HEAD:static/css/result.css
-.align-items-center{
-    background-image: url('media/result-pic.png');
-}
-=======
->>>>>>> d6f7710280bd34ff54c6955d5b62c362a6f09a1f:static/css/doctor.css
+
 /*Navbar*/
 
 .navbar{
@@ -48,7 +43,7 @@
 
 
 body{
-    background-image: url('/static/media/form-img-01.png');
+    background-image: url('/static/media/result_pic.png');
     background-attachment: scroll;
     background-size: contain;
     background-repeat: no-repeat;
